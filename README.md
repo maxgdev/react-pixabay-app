@@ -6,3 +6,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - material-ui
 - pixabay API
 
+Credits - Traversy Media
+https://www.patreon.com/traversymedia
