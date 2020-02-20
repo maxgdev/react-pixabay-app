@@ -3,7 +3,7 @@ import TextField            from 'material-ui/TextField';
 import SelectField          from 'material-ui/SelectField';
 import MenuItem             from 'material-ui/MenuItem';
 import axios                from 'axios';
-// import ImageResults         from '../ImageResults';
+import ImageResults         from '../ImageResults';
 
 class Search extends Component {
 
@@ -12,7 +12,7 @@ class Search extends Component {
         amount: 15,
         images: [],
         apiUrl: 'https://pixabay.com/api',
-        apikey: '',
+        apikey: '15320395-fbf03de3cbc3b1a8cf35eb390'
     }
 
     onTextChange = (e) => {
@@ -60,7 +60,7 @@ class Search extends Component {
                     <MenuItem value={50} primaryText="50"/>
                 </SelectField>
                 <br />
-                <p>Results go here</p>
+                {this.state.images.length > 0 ? <ImageResults images={this.state.images} /> : null }
             </div>
         )
     }
